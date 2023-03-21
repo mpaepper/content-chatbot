@@ -18,6 +18,8 @@ To install the dependencies, simply run `pip install -r requirements.txt`.
 
 ### Create your embeddings
 
+<img src="imgs/llm-qa-overview.png" alt="overview of the embedding process: each blog post is split into N documents and each document yields a vector representation." />
+
 This is the most important step and you will need to obtain an OpenAI API key to use it.
 
 Once you have the `$api_key`, you can run `export OPENAI_API_KEY='$api_key'` in your terminal.
@@ -29,6 +31,8 @@ This will create your embeddings in a file called `faiss_store.pkl`. You need to
 For more details about this, please check <a href="https://www.paepper.com/blog/posts/build-q-and-a-bot-of-your-website-using-langchain/">this blog post</a>.
 
 ### Answering a question while getting the answer source documents
+
+<img src="imgs/llm-qa-process.png" alt="overview of the Q&A process: first we find the closest matches of our documents from the FAISS store and then we ask the question to the GPT3 API." />
 
 With the embeddings set up, ask a question like this: `python ask_question.py "How to detect objects in images?"`
 

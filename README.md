@@ -4,7 +4,7 @@ Turn your website content into a question answering bot which can cite your docu
 
 Alternatively, use it in an interactive chatbot style fashion.
 
-All this can be achieved with a tool called <a href="https://github.com/hwchase17/langchain" target='_blank'>langchain</a>.
+All this can be achieved with a tool called <a href="https://github.com/hwchase17/langchain" target='_blank'>langchain</a> which in turn uses the OpenAI API.
 
 This simple repository showcases how to apply it on your own website content.
 
